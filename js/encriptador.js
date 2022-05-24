@@ -11,11 +11,11 @@ entrada.addEventListener('focus', function(){
 botaoEncriptar.addEventListener('click', function(){
     var textoentrada = entrada.value
     saida.value = " ";
-    var novasaida = textoentrada.replace("e","enter");
-        novasaida = novasaida.replace("i","imes");
-        novasaida = novasaida.replace("a","ai");
-        novasaida = novasaida.replace("o","ober");
-        novasaida = novasaida.replace("u","ufat");
+    var novasaida = textoentrada.replace(/e/g,"enter");
+        novasaida = novasaida.replace(/i/g,"imes");
+        novasaida = novasaida.replace(/a/g,"ai");
+        novasaida = novasaida.replace(/o/g,"ober");
+        novasaida = novasaida.replace(/u/g,"ufat");
     
     saida.value = novasaida;
     
@@ -24,11 +24,11 @@ botaoEncriptar.addEventListener('click', function(){
 botaoDesencriptar.addEventListener('click', function(){
     var textoentrada = entrada.value
     saida.value = " ";
-    var novasaida = textoentrada.replace("enter","e");
-        novasaida = novasaida.replace("imes","i");
-        novasaida = novasaida.replace("ai","a");
-        novasaida = novasaida.replace("ober","o");
-        novasaida = novasaida.replace("ufat","u");
+    var novasaida = textoentrada.replace(/enter/g,"e");
+        novasaida = novasaida.replace(/imes/g,"i");
+        novasaida = novasaida.replace(/ai/g,"a");
+        novasaida = novasaida.replace(/ober/g,"o");
+        novasaida = novasaida.replace(/ufat/g,"u");
     
     saida.value = novasaida;
     

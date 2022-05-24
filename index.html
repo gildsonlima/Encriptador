@@ -21,7 +21,7 @@
     <main>
         <div class="ladoEsquerdo">
             <label class="tituloSecundario" for="entrada">Entrada de dados</label>
-            <textarea class="caixaEntrada" name="entrada" id="textoEntrada" rows="15"></textarea>
+            <textarea class="caixaEntrada" name="entrada" id="textoEntrada" rows="15" placeholder="Insira o texto a ser processado"></textarea>
             <div>
                 <button class="btn" id="encriptar">Encriptar</button>
                 <button class="btn" id="desencriptar">Desencriptar</button>
@@ -29,11 +29,15 @@
         </div>
         <div class="ladoDireito">
             <label class="tituloSecundario" for="saida" >Saida de dados</label>
-            <textarea class="caixaSaida" name="entrada" id="textoSaida" rows="15" ></textarea>
+            <textarea class="caixaSaida" name="entrada" id="textoSaida" rows="15" placeholder="Nenhuma palavra processada" ></textarea>
+            <div>
+                <button class="btn" id="copiar">Copiar</button>
+            </div>
         </div>
         
     </main>
 <script src="js/encriptador.js"></script>
+<script src="js/copiar.js"></script>
 
 </body>
 </html>
