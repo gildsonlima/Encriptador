@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="tituloPrincipal">Encriptador</h1>
+    </header>
+    <main>
+        <div class="ladoEsquerdo">
+            <label class="tituloSecundario" for="entrada">Entrada de dados</label>
+            <textarea class="caixaEntrada" name="entrada" id="textoEntrada" rows="15"></textarea>
+            <div>
+                <button class="btn" id="encriptar">Encriptar</button>
+                <button class="btn" id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="ladoDireito">
+            <label class="tituloSecundario" for="saida" >Saida de dados</label>
+            <textarea class="caixaSaida" name="entrada" id="textoSaida" rows="15" ></textarea>
+        </div>
+        
+    </main>
+<script src="js/encriptador.js"></script>
+
+</body>
+</html>
