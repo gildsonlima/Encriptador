@@ -4,13 +4,13 @@ var botaoEncriptar = document.querySelector('#encriptar');
 var botaoDesencriptar = document.querySelector('#desencriptar')
 
 entrada.addEventListener('focus', function(){
-    entrada.value = " ";
+    entrada.value = "";
 })
 
 
 botaoEncriptar.addEventListener('click', function(){
     var textoentrada = entrada.value
-    saida.value = " ";
+    saida.value = "";
     var novasaida = textoentrada.replace(/e/g,"enter");
         novasaida = novasaida.replace(/i/g,"imes");
         novasaida = novasaida.replace(/a/g,"ai");
@@ -23,7 +23,7 @@ botaoEncriptar.addEventListener('click', function(){
 
 botaoDesencriptar.addEventListener('click', function(){
     var textoentrada = entrada.value
-    saida.value = " ";
+    saida.value = "";
     var novasaida = textoentrada.replace(/enter/g,"e");
         novasaida = novasaida.replace(/imes/g,"i");
         novasaida = novasaida.replace(/ai/g,"a");

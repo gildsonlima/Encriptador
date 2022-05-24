@@ -7,9 +7,10 @@
     <title>Encriptador</title>
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,6 +23,9 @@
         <div class="ladoEsquerdo">
             <label class="tituloSecundario" for="entrada">Entrada de dados</label>
             <textarea class="caixaEntrada" name="entrada" id="textoEntrada" rows="15" placeholder="Insira o texto a ser processado"></textarea>
+            <div class="aviso">
+                <img class="imgAviso" src="img/Vector.png"><span class="">Apenas letras minúsculas e sem acento.</span>
+            </div>
             <div>
                 <button class="btn" id="encriptar">Encriptar</button>
                 <button class="btn" id="desencriptar">Desencriptar</button>
@@ -30,6 +34,9 @@
         <div class="ladoDireito">
             <label class="tituloSecundario" for="saida" >Saida de dados</label>
             <textarea class="caixaSaida" name="entrada" id="textoSaida" rows="15" placeholder="Nenhuma palavra processada" ></textarea>
+            <div class="aviso">
+                <img class="imgAviso" src="img/Vector.png"><span class="">Para copiar a saida</span>
+            </div>
             <div>
                 <button class="btn" id="copiar">Copiar</button>
             </div>
