@@ -1,7 +1,6 @@
 body{
 background-color: rgb(175, 216, 252);
 font-family: 'Fredoka One', cursive;
-
 }
 header{
     display: flex;
@@ -17,16 +16,18 @@ main{
     
 }
 
+
+
 .tituloPrincipal{
     display: flex;
     justify-content: center;
     color: rgb(30, 108, 224);
-    font-size: 7rem;
+    font-size: 6rem;
     margin: 1rem;
     background-color: aliceblue;
     padding: 0.8rem;
     border-radius: 1.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
     width: 100%;
 }
 
@@ -49,14 +50,19 @@ main{
     margin: 1%;
 }
 
+textarea{
+    resize: none;
+    height: 23rem;
+    
+}
+
 .caixaEntrada{
     display: block;
     border-radius: 2rem;
     padding: 1rem;
     width: 90%;
-    margin: 0.5rem;
+    margin: 1.5rem;
     font-size: 1.5rem;
-    
 }
 
 .caixaEntrada:hover,:focus{
@@ -65,17 +71,23 @@ main{
 }
 
 .caixaSaida{
+    margin: 1.5rem;
     display: block;
     border-radius: 2rem;
     padding: 1rem;
     width: 90%;
-    margin: 0.5rem;
     font-size: 1.5rem;
+}
+
+.vazio{
+    background: url(../img/semTexto.png) center center no-repeat white ;
+    background-size: auto;
 }
 
 .caixaSaida:hover,:focus{
     transition: 1500ms;
     background-color: rgba(255, 255, 255, 0.651);
+    
 }
 
 .aviso{
@@ -87,7 +99,7 @@ main{
 .imgAviso{
     display: inline;
     justify-content: center;
-    margin: 0 0.3rem 0 0.3rem ;
+    margin: 0 0.3rem 0 1.5rem ;
 
 }
 
@@ -95,7 +107,7 @@ main{
     font-size: 1.6rem;
     padding: 0.5rem;
     border-radius: 0.3rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 1.5rem ;
     font-family: 'Fredoka One', cursive;
     
 }
@@ -104,6 +116,7 @@ main{
     transition: 700ms;
     transform: scale(1.1);
 }
+
 
 @media only screen and (max-width: 768px) {
     .ladoDireito, .ladoEsquerdo{
@@ -118,12 +131,26 @@ main{
     .caixaEntrada, .caixaSaida {
         width: 90%;
         margin: 0.5rem;
+        height: 6rem;
+        font-size: 1rem;
     }
     .tituloPrincipal{
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 0.5rem;
         margin: 0.5rem;
     }
 
-
+    .btn{
+        font-size: 1rem;
+    }
+    .vazio{
+        background: url(../img/semTextoMobile.png) center center no-repeat white ;
+        background-size: auto;
+    }
+    .tituloSecundario{
+        font-size: 1.5rem;
+    }
+    .aviso{
+        font-size: 0.7rem;
+    }
 }

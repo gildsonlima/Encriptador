@@ -3,9 +3,15 @@ var saida = document.querySelector('#textoSaida');
 var botaoEncriptar = document.querySelector('#encriptar');
 var botaoDesencriptar = document.querySelector('#desencriptar')
 
+saida.classList.add('vazio');
+
 entrada.addEventListener('focus', function(){
     entrada.value = "";
+    saida.value = "";
+    saida.classList.add('vazio');
 })
+
+
 
 
 botaoEncriptar.addEventListener('click', function(){
@@ -18,6 +24,11 @@ botaoEncriptar.addEventListener('click', function(){
         novasaida = novasaida.replace(/u/g,"ufat");
     
     saida.value = novasaida;
+    if(saida.value==""){
+        saida.classList.add('vazio');
+    }else{
+        saida.classList.remove('vazio');
+    }
     
 })
 
@@ -31,6 +42,11 @@ botaoDesencriptar.addEventListener('click', function(){
         novasaida = novasaida.replace(/ufat/g,"u");
     
     saida.value = novasaida;
+    if(saida.value==""){
+        saida.classList.add('vazio');
+    }else{
+        saida.classList.remove('vazio');
+    }
     
 })
 
