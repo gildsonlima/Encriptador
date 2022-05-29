@@ -1,6 +1,13 @@
 body{
 background-color: rgb(175, 216, 252);
 font-family: 'Fredoka One', cursive;
+
+}
+.geral{
+
+    height: 100vh;
+    width: 100vw;
+    
 }
 header{
     display: flex;
@@ -16,43 +23,42 @@ main{
     
 }
 
-
-
 .tituloPrincipal{
     display: flex;
     justify-content: center;
     color: rgb(30, 108, 224);
     font-size: 6rem;
-    margin: 1rem;
+    margin: auto;
     background-color: aliceblue;
     padding: 0.8rem;
-    border-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     margin-bottom: 1.5rem;
     width: 100%;
+    height: auto;
 }
 
 .ladoEsquerdo{
     display: inline-block;
-    width: 69%;
-    
-
+    width: 68%;
+    height: auto;
 }
 .ladoDireito{
     display: inline-block;
     width: 29%;
-    
+    height: auto;
 }
 
 .tituloSecundario{
     text-align: center;
     display:block;
     font-size: 2rem;
-    margin: 1%;
+    margin: auto;
 }
 
 textarea{
     resize: none;
-    height: 23rem;
+    height: 40vh;
     
 }
 
@@ -61,7 +67,7 @@ textarea{
     border-radius: 2rem;
     padding: 1rem;
     width: 90%;
-    margin: 1.5rem;
+    margin: auto;
     font-size: 1.5rem;
 }
 
@@ -71,7 +77,7 @@ textarea{
 }
 
 .caixaSaida{
-    margin: 1.5rem;
+    margin: auto;
     display: block;
     border-radius: 2rem;
     padding: 1rem;
@@ -81,7 +87,7 @@ textarea{
 
 .vazio{
     background: url(../img/semTexto.png) center center no-repeat white ;
-    background-size: auto;
+    background-size: 60%;
 }
 
 .caixaSaida:hover,:focus{
@@ -119,27 +125,29 @@ textarea{
 
 
 @media only screen and (max-width: 768px) {
-    .ladoDireito, .ladoEsquerdo{
-        width: 97%;
-        margin: 0.5rem;
-    }
-
-    .aviso{
-
-    }
-
-    .caixaEntrada, .caixaSaida {
-        width: 90%;
-        margin: 0.5rem;
-        height: 6rem;
-        font-size: 1rem;
+    body{
+        margin: 0;
+        padding: 0;
     }
     .tituloPrincipal{
         font-size: 2.5rem;
         padding: 0.5rem;
-        margin: 0.5rem;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 3vh;
+    }
+    .ladoDireito, .ladoEsquerdo{
+        width: 100%;
+        margin: auto;
     }
 
+    .caixaEntrada, .caixaSaida {
+        width: 80vw;
+        margin: auto;
+        height: 20vh;
+        font-size: 1rem;
+    }
+    
     .btn{
         font-size: 1rem;
     }
@@ -148,6 +156,7 @@ textarea{
         background-size: auto;
     }
     .tituloSecundario{
+        margin-bottom: 1vh;
         font-size: 1.5rem;
     }
     .aviso{
